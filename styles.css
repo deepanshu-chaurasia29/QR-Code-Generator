@@ -1,0 +1,146 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="color"],
+input[type="file"],
+input[type="range"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="color"]:focus,
+input[type="file"]:focus,
+input[type="range"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Label Styling */
+label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* QR Code and Canvas */
+canvas {
+    margin-top: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+}
+
+/* Button */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003f7f;
+}
+
+/* Download Link */
+.download-link {
+    display: none;
+    margin-top: 25px;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+.download-link:hover {
+    background-color: #218838;
+}
+
+.download-link:active {
+    background-color: #1e7e34;
+}
+
+/* Range input (QR Code Size) */
+#sizeInput {
+    width: 80%;
+    margin: 10px auto;
+}
+
+#sizeLabel {
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 600;
+    color: #007BFF;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    .download-link {
+        font-size: 16px;
+    }
+}
